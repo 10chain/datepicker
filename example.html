@@ -210,6 +210,7 @@ $(&#039;#dp5&#039;).datepicker()
       ....
     }
   });
+
 </pre>
         </div>
       </div>
@@ -223,6 +224,13 @@ $(&#039;#dp5&#039;).datepicker()
             $('#dp1').datepicker({
                 format: 'mm-dd-yyyy'
             });
+            // if you want to add limits when datepicker show, please refer this
+            //var OPT = $('#sdp').datepicker().on('show',function(ev){
+            //        var tmp_day = $("#claz_id").find("option:selected").attr("day");
+            //        OPT.data('datepicker').limit({day: tmp_day, startdate: '2012-10-12'});
+            //        });
+
+            // OPT.data('datepicker').limit();
             $('#dp2').datepicker();
             $('#dp3').datepicker();
             $('#dp3').datepicker();

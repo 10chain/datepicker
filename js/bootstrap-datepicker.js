@@ -87,7 +87,12 @@
 	
 	Datepicker.prototype = {
 		constructor: Datepicker,
-		
+		limit : function(limits)
+        {
+            this.day       = limits.day || 0;
+            this.startdate = new Date( limits.startdate ) || 0;
+		    this.update();
+        },
 		show: function(e) {
 			this.picker.show();
 			this.height = this.component ? this.component.outerHeight() : this.element.outerHeight();
